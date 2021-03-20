@@ -15,13 +15,12 @@
         <module>top-register</module>
         <module>top-upms</module>
         <module>top-visual</module>
-        <module>top-common-datasource</module>
     </modules>
 
     <properties>
         <top.common.version>1.0-SNAPSHOT</top.common.version>
-        <spring-boot.version>2.4.4</spring-boot.version>
-        <spring-cloud.version>2020.0.2</spring-cloud.version>
+        <spring-boot.version>2.4.3</spring-boot.version>
+        <spring-cloud.version>2020.0.1</spring-cloud.version>
         <spring-cloud-alibaba.version>2.2.5.RELEASE</spring-cloud-alibaba.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <security.oauth.version>2.3.6.RELEASE</security.oauth.version>
@@ -32,12 +31,190 @@
         <fastjson.version>1.2.75</fastjson.version>
         <swagger.core.version>1.5.24</swagger.core.version>
         <security.version>2.2.4.RELEASE</security.version>
+
+        <spring-boot-admin.version>2.4.0</spring-boot-admin.version>
+        <hutool.version>5.5.8</hutool.version>
+        <mybatis-plus.version>3.4.2</mybatis-plus.version>
+        <dynamic-ds.version>3.2.0</dynamic-ds.version>
+        <captcha.version>2.2.0</captcha.version>
+        <velocity.version>1.7</velocity.version>
+        <jasypt.version>2.1.0</jasypt.version>
+        <swagger.fox.version>3.0.0</swagger.fox.version>
+        <xxl-job.version>2.3.0</xxl-job.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.tompad.top</groupId>
+                <artifactId>top-common-core</artifactId>
+                <version>${top.common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.tompad.top</groupId>
+                <artifactId>top-common-datasource</artifactId>
+                <version>${top.common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.tompad.top</groupId>
+                <artifactId>top-common-job</artifactId>
+                <version>${top.common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.tompad.top</groupId>
+                <artifactId>top-common-log</artifactId>
+                <version>${top.common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pig4cloud</groupId>
+                <artifactId>pig-common-mybatis</artifactId>
+                <version>${top.common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pig4cloud</groupId>
+                <artifactId>pig-common-security</artifactId>
+                <version>${top.common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pig4cloud</groupId>
+                <artifactId>pig-common-feign</artifactId>
+                <version>${top.common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pig4cloud</groupId>
+                <artifactId>pig-common-swagger</artifactId>
+                <version>${top.common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pig4cloud</groupId>
+                <artifactId>pig-common-test</artifactId>
+                <version>${top.common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.tompad.top</groupId>
+                <artifactId>top-upms-api</artifactId>
+                <version>${top.common.version}</version>
+            </dependency>
+            <!-- spring boot 依赖 -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- spring cloud 依赖 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- spring cloud alibaba 依赖 -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
 
+
+            <!--稳定版本，替代spring security bom内置-->
+            <dependency>
+                <groupId>org.springframework.security.oauth</groupId>
+                <artifactId>spring-security-oauth2</artifactId>
+                <version>${security.oauth.version}</version>
+            </dependency>
+            <!--swagger 最新依赖内置版本-->
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-models</artifactId>
+                <version>${swagger.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${swagger.core.version}</version>
+            </dependency>
+            <!--fastjson 版本-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <!--web 模块-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot.version}</version>
+                <exclusions>
+                    <!--排除tomcat依赖-->
+                    <exclusion>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter-tomcat</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <dependencies>
+        <!--bootstrap 启动器-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
+        <!--配置文件处理器-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!--配置文件加解密-->
+        <dependency>
+            <groupId>com.github.ulisesbocchio</groupId>
+            <artifactId>jasypt-spring-boot-starter</artifactId>
+            <version>${jasypt.version}</version>
+        </dependency>
+        <!--监控-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <!--监控客户端-->
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
+            <version>${spring-boot-admin.version}</version>
+        </dependency>
+        <!--Lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <!--测试依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <!-- 环境标识，需要与配置文件的名称相对应 -->
+                <profiles.active>dev</profiles.active>
+            </properties>
+            <activation>
+                <!-- 默认环境 -->
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
 
 </project>

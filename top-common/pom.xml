@@ -15,6 +15,13 @@
         <module>top-common-core</module>
         <module>top-common-datasource</module>
         <module>top-common-fegin</module>
+        <module>top-common-job</module>
+        <module>top-common-mybatis</module>
+        <module>top-common-security</module>
+        <module>top-common-swagger</module>
+        <module>top-common-test</module>
+        <module>top-common-log</module>
+        <module>top-common-core</module>
     </modules>
 
 

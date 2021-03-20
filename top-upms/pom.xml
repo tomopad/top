@@ -10,6 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>top-upms</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>top-upms-api</module>
+        <module>top-common-biz</module>
+    </modules>
 
 
 </project>
