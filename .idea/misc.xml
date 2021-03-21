@@ -5,7 +5,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/top-visual/top-codegen/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -14,6 +13,8 @@
         <option value="$PROJECT_DIR$/top-common-log/pom.xml" />
         <option value="$PROJECT_DIR$/top-common-mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/top-common-security/pom.xml" />
+        <option value="$PROJECT_DIR$/top-common/top-common-job/pom.xml" />
+        <option value="$PROJECT_DIR$/top-visual/top-xxl-job-admin/pom.xml" />
       </set>
     </option>
   </component>

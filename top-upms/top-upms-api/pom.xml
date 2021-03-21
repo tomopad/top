@@ -10,6 +10,23 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>top-upms-api</artifactId>
+    <packaging>jar</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.tompad.top</groupId>
+            <artifactId>top-common-core</artifactId>
+        </dependency>
+        <!--feign 依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <!--断路器依赖-->
+        <dependency>
+            <groupId>org.tompad.top</groupId>
+            <artifactId>top-common-fegin</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

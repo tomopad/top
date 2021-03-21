@@ -13,7 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>top-upms-api</module>
-        <module>top-common-biz</module>
+        <module>top-upms-biz</module>
     </modules>
 
 

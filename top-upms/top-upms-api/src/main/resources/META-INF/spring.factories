@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.tomopad.top.admin.api.feign.fallback.RemoteLogServiceFallbackImpl,\
+  com.tomopad.top.admin.api.feign.fallback.RemoteTokenServiceFallbackImpl,\
+  com.tomopad.top.admin.api.feign.fallback.RemoteUserServiceFallbackImpl,\
+  com.tomopad.top.admin.api.feign.factory.RemoteLogServiceFallbackFactory,\
+  com.tomopad.top.admin.api.feign.factory.RemoteTokenServiceFallbackFactory,\
+  com.tomopad.top.admin.api.feign.factory.RemoteUserServiceFallbackFactory

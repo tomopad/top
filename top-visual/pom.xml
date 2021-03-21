@@ -12,10 +12,8 @@
     <artifactId>top-visual</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>top-visual-codegen</module>
         <module>top-monitor</module>
         <module>top-sentinel-dashboard</module>
-        <module>top-xxl-job-admin</module>
     </modules>
 
 

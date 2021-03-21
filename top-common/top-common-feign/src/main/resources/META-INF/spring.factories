@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.tomopad.top.common.fegin.PigFeignAutoConfiguration,\
+  com.tomopad.top.common.fegin.handler.GlobalBizExceptionHandler

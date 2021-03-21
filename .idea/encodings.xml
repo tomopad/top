@@ -7,10 +7,8 @@
     <file url="file://$PROJECT_DIR$/top-common/top-common-core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/top-common/top-common-datasource/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/top-common/top-common-datasource/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/top-common/top-common-fegin/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/top-common/top-common-fegin/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/top-common/top-common-job/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/top-common/top-common-job/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/top-common/top-common-feign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/top-common/top-common-feign/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/top-common/top-common-log/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/top-common/top-common-log/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/top-common/top-common-mybatis/src/main/java" charset="UTF-8" />
@@ -18,24 +16,20 @@
     <file url="file://$PROJECT_DIR$/top-common/top-common-security/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/top-common/top-common-security/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/top-common/top-common-swagger/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/top-common/top-common-swagger/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/top-common/top-common-test/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/top-common/top-common-test/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/top-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/top-gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/top-register/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/top-register/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/top-upms/top-common-biz/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/top-upms/top-common-biz/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/top-upms/top-upms-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/top-upms/top-upms-api/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/top-visual/top-codegen/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/top-visual/top-codegen/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/top-upms/top-upms-biz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/top-upms/top-upms-biz/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/top-visual/top-monitor/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/top-visual/top-monitor/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/top-visual/top-sentinel-dashboard/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/top-visual/top-sentinel-dashboard/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/top-visual/top-xxl-job-admin/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/top-visual/top-xxl-job-admin/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/top-visual/top-sentinel-dashboard/src/main/webapp" charset="UTF-8" />
   </component>
 </project>

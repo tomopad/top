@@ -66,23 +66,23 @@
                 <version>${top.common.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.pig4cloud</groupId>
-                <artifactId>pig-common-mybatis</artifactId>
+                <groupId>org.tompad.top</groupId>
+                <artifactId>top-common-mybatis</artifactId>
                 <version>${top.common.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.pig4cloud</groupId>
-                <artifactId>pig-common-security</artifactId>
+                <groupId>org.tompad.top</groupId>
+                <artifactId>top-common-security</artifactId>
                 <version>${top.common.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.pig4cloud</groupId>
-                <artifactId>pig-common-feign</artifactId>
+                <groupId>org.tompad.top</groupId>
+                <artifactId>top-common-fegin</artifactId>
                 <version>${top.common.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.pig4cloud</groupId>
-                <artifactId>pig-common-swagger</artifactId>
+                <groupId>org.tompad.top</groupId>
+                <artifactId>top-common-swagger</artifactId>
                 <version>${top.common.version}</version>
             </dependency>
             <dependency>
@@ -202,6 +202,51 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <finalName>${project.name}</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <pluginManagement>
+            <plugins>
+                <!--打包jar 与git commit 关联插件-->
+                <plugin>
+                    <groupId>pl.project13.maven</groupId>
+                    <artifactId>git-commit-id-plugin</artifactId>
+                    <version>${git.commit.plugin}</version>
+                </plugin>
+                <!--代码格式插件，默认使用spring 规则-->
+                <plugin>
+                    <groupId>io.spring.javaformat</groupId>
+                    <artifactId>spring-javaformat-maven-plugin</artifactId>
+                    <version>${spring.checkstyle.plugin}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring-boot.version}</version>
+                    <configuration>
+                        <finalName>${project.build.finalName}</finalName>
+                        <layers>
+                            <enabled>true</enabled>
+                        </layers>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>repackage</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+    </build>
 
     <profiles>
         <profile>

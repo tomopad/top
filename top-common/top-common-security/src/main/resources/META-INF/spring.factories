@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.tomopad.top.common.security.service.TopUserDetailsServiceImpl,\
+  com.tomopad.top.common.security.component.TopSecurityInnerAspect

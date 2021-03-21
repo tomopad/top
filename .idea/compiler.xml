@@ -7,19 +7,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="top-upms-biz" />
         <module name="top-auth" />
         <module name="top-common-security" />
         <module name="top-common-core" />
-        <module name="top-common-biz" />
         <module name="top-common-mybatis" />
         <module name="top-monitor" />
         <module name="top-common-datasource" />
-        <module name="top-common-job" />
+        <module name="top-common-feign" />
         <module name="top-gateway" />
-        <module name="top-common-fegin" />
-        <module name="top-xxl-job-admin" />
         <module name="top-common-test" />
-        <module name="top-visual-codegen" />
         <module name="top-register" />
         <module name="top-common-swagger" />
         <module name="top-common-log" />
@@ -29,6 +26,9 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="top-codegen" target="1.8" />
+      <module name="top-common-job" target="1.8" />
+      <module name="top-visual-codegen" target="1.8" />
+      <module name="top-xxl-job-admin" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
